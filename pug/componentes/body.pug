@@ -1,0 +1,27 @@
+header.header
+    h1.header__title
+    .header__icon: img#icon(src=ruta, alt="")
+    .header__form
+        input.checkbox(type="checkbox")
+        input(type="text", placeholder="Create a new todo...")
+main
+    .container
+        +Do(textos[0]).container__task
+        +Do(textos[1]).container__task
+        +Do(textos[2]).container__task
+        +Do(textos[3]).container__task
+        +Do(textos[4]).container__task
+        +Do(textos[5]).container__task
+        .container__footer
+            span 5 items left 
+            span  Clear Completed
+
+    .container
+        ul
+            each opcion in opciones
+                li: a=opcion
+    
+    footer
+        p Drag and drop to reorder list
+            
+

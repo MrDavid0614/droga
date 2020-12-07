@@ -1,114 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Todo app</title>
-
-
-</head>
-<body>
-
-  <header>
-
-    <div class="header">
-
-      <h1 class="title">T O D O</h1>
-
-      <div class="icon-container">
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/></svg>
-
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./styles/css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&amp;	display=swap" rel="stylesheet"/>
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title"></h1>
+      <div class="header__icon"><img id="icon" src="./assets/images/icons/icon-moon.svg" alt=""/></div>
+      <div class="header__form">
+        <input class="checkbox" type="checkbox"/>
+        <input type="text" placeholder="Create a new todo..."/>
       </div>
-
-    </div>
-
-  </header>
-
-  <main>
-
-    <div class="create-btn">
-
-      <input type="checkbox" class="checkbox">
-      <span class="create-btn___text">Create a new todo...</span>
-
-    </div>
-
-    <div class="task-container">
-
-      <div class="tasks">
-
-
-
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p>Jog around the park 3x</p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p>10 minutes meditation</p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p>Read for 1 hour</p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p>Pick up groceries</p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p>Complete Todo App on Frontend Mentor</p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox"/>
+          <p></p>
+          <div class="icon"><img src="./assets/images/icons/icon-cross.svg" alt="X"/></div>
+        </div>
+        <div class="container__footer"><span>5 items left </span><span> Clear Completed</span></div>
       </div>
-
-      <div class="task-container-info">
-
-        <h5> <span class="items-number"><script>
-
-          let tasks = document.querySelectorAll('.task');
-
-          let total = 0;
-
-          Array.prototype.forEach.call(tasks, task => {
-
-            total += task;
-
-          })
-
-          document.write(total) 
-          
-          
-          </script></span> items left </h5>
-
-        <h5> Clear Completed </h5>
-
+      <div class="container">
+        <ul>
+          <li><a>All</a></li>
+          <li><a>Active</a></li>
+          <li><a>completed</a></li>
+        </ul>
       </div>
-
-    </div>
-
-    <div class="view-selection">
-      
-      <h4> All </h4>
-      <h4> Active </h4>
-      <h4> Completed </h4>
-
-    </div>
-  
-    Drag and drop to reorder list
-
-  </main>
-
-  <footer>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-
-  </footer>
-  
-  <div id="Modal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3>Task name:</h3>
-
-      <input type="text" class="task-name">
-
-      <button class="add-btn"> Add </button>
-
-    </div>
-  
-  </div>
-
-  <script src="./assets/js/index.js"></script>
-</body>
+      <footer>
+        <p>Drag and drop to reorder list</p>
+      </footer>
+    </main>
+  </body>
 </html>

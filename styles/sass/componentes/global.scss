@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+$fuente :'Josefin Sans', sans-serif;
+$fuente-color: hsl(220, 98%, 61%);
+$gradiant:linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
+$color-principal: #000;
+$color-contenedor-l   :hsl(0, 0%, 98%); 
+$color-background-l  :hsl(236, 33%, 92%) ;
+$color-footer-l   :hsl(233, 11%, 84%) ;
+$color-tachado-l   :hsl(236, 9%, 61%) ;
+$color-letras-l:   hsl(235, 19%, 35%);
+$color-contenedor-d: hsl(235, 24%, 19%);
+$color-background-d: hsl(234, 39%, 85%);
+$color-footer-d: hsl(236, 33%, 92%);
+$color-tachado-d: hsl(235, 21%, 11%);
+$color-letras-d: hsl(234, 11%, 52%);
+
+
+body{
+    font-size: 18px;
+    color: $fuente-color;
+    font-family: $fuente;
+}

@@ -1,0 +1,254 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue: hsl(233, 11%, 84%);
+    --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+    --Josefin-font: 'Josefin Sans', sans-serif;
+
+}
+
+body {
+
+    background-color: var(--Very-Light-Grayish-Blue);
+    font-family: var(--Josefin-font);
+
+}
+
+.header {
+
+    height: 12em;
+    background-image: url('../images/bg-mobile-light.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 150px;
+
+}
+
+.title {
+
+    padding-top: 50px;
+    padding-left: 30px;
+    color: var(--Very-Light-Gray);
+    font-weight: 700px;
+
+}
+
+.icon-container {
+    
+    padding-top: 50px;
+
+}
+
+.create-btn {
+
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 14px;
+    width: 80%;
+    border-radius: 10px;
+    font-weight: 400px;
+
+}
+
+.create-btn:hover {
+
+    cursor: pointer;
+    background-color: #f8f8f8;
+
+}
+
+.checkbox {
+
+    width: 1.7em;
+    height: 1.7em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.create-btn___text {
+
+    color: var(--Dark-Grayish-Blue);
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: 400px;
+}
+
+.task-container {
+
+    background-color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    font-weight: 400px;
+    position: relative;
+
+}
+
+.task {
+
+    border-bottom: 2px solid var(--Dark-Grayish-Blue);
+
+}
+
+.task-container-info {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.task-container-info h5 {
+
+    color: var(--Dark-Grayish-Blue);
+
+}
+
+.view-selection {
+
+    background-color: #ffffff;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 400px;
+    position: relative;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    color: var(--Very-Dark-Grayish-Blue);
+
+  }
+
+  .task-name {
+
+    margin-top: 5px;
+    padding: 5px;
+    font-family: var(--Josefin-font);
+
+  }
+
+  .task-name:focus {
+
+    outline: none;
+
+  }
+
+  .add-btn {
+
+    padding: 7px;
+    background-color: #ffffff;
+    border: 2px solid #26ca10;
+    border-radius: 8px;
+    font-family: var(--Josefin-font);
+    font-size: 15px;
+
+  }
+
+  .add-btn:hover {
+
+    background-color: #26ca10;
+    outline: none;
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+footer {
+
+    bottom: 5px;
+    position: absolute;
+
+}
+
+.attribution { 
+
+    font-size: 11px;
+    text-align: center;
+
+}
+.attribution a {
+
+    color: hsl(228, 45%, 44%); 
+
+}
+
+@media (min-width: 410px) {
+
+    .header {
+
+        height: 15em;
+        background-image: url('../images/bg-mobile-light.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 180px;
+    
+    }
+
+}
